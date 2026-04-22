@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/carrossel.css">
 </head>
+
 <body>
+
     <header class="cabecalho">
         <div class="container">
             <input type="checkbox" id="menu" class="container_botao">
@@ -29,22 +33,24 @@
                 <li class="lista-menu_item"><a href="#" class="lista-menu_link">Front-end</a></li>
                 <li class="lista-menu_item"><a href="#" class="lista-menu_link">Infraestrutura</a></li>
                 <li class="lista-menu_item"><a href="#" class="lista-menu_link">Business</a></li>
-                <li class="lista-menu_item"><a href="#" class="lista-menu_link">Design & UX</a></li>
-                                
+                <li class="lista-menu_item"><a href="#" class="lista-menu_link">Design & UX</a></li>                             
             </ul>
             <img src="img/Logo.svg" alt="Logo da Alurabooks">
         </div>
+
        <div>
             <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container_imagem"></a>
             <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container_imagem"></a>
             <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container_imagem"></a>
        </div>
     </header>
+
     <section class="banner">
         <h2 class="banner_titulo">Já sabe por onde começar?</h2>
         <p class="banner_texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" class="banner_pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+
     <section class="carrossel">
         <h2 class="carrossel_titulo">Novos lançamentos</h2>
         <!-- Slider main container -->
@@ -67,6 +73,31 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
+
+        <div class="card"> 
+            <!-- 1 linha -->
+            <div class="card_descrição">
+                <!-- 1 coluna -->
+                <div class="descrição">
+                    <h3 class="descrição_titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descrição_titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descrição_texto">Construindo uma aplicação integrada com a plataforma</p>
+                </div>
+                <!-- 2 coluna -->
+                <img src="img/Angular.svg" class="descrição_imagem">
+            </div>
+
+            <!-- 2 linha -->
+            <div class="card_botões">
+                <!-- 1 coluna -->
+                <ul class="botões">
+                    <li class="botões_item"><img src="img/Favoritos.svg" alt="Favoritar Livro"></li>
+                    <li class="botões_item"><img src="img/Compras.svg" alt="Adicionar no carrinho"></li>
+                </ul>
+                <!-- 2 coluna -->
+                <a href="#" class="botões_ancora">Saiba mais</a>
+            </div>
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
@@ -81,5 +112,6 @@
             },
         });
     </script>
+
 </body>
 </html>
