@@ -52,6 +52,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .container__botao {
@@ -102,6 +103,15 @@
     }
 
     .cabeçalho__menu-hamburguer {
+        display: none;
+    }
+
+    .opções__botão:checked~.lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opções__botão {
         display: none;
     }
 
